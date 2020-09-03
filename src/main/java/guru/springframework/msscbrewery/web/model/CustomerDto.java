@@ -11,10 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDto {
-	private UUID id;
-	private String beerName;
-	private String beerStyle;
-	private Long upc;
+public class CustomerDto {
 
+	private UUID customerId;
+	private String name;
 }
