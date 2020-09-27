@@ -59,7 +59,9 @@ public class BeerControllerV2 {
 
     @PutMapping({"/{beerId}"})
     public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, @Valid @RequestBody BeerDtoV2 beerDto){
-
+    	
+    	log.debug("in the handler update method ******8");
+    	
         beerServiceV2.updateBeer(beerId, beerDto);
 
         return new ResponseEntity(HttpStatus.NO_CONTENT);
